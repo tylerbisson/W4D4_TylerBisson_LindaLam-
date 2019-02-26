@@ -1,0 +1,30 @@
+<h1 style="color:orange;">Take a Look at this Individual Cat</h1>
+
+<style>
+  table,
+  td {
+      border: 1px solid #333;
+  }
+
+  thead,
+  tfoot {
+      background-color: Purple;
+      color: #fff;
+  }
+</style>
+
+<table>
+    <thead>
+        <tr>
+            <th colspan="2"><%= @cat.name %></th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>Age: <%= @cat.age %></td>
+            <td>Color: <%= @cat.color %></td>
+        </tr>
+    </tbody>
+</table>
+
+<a href="<%=cats_url%>">Back to Cats</a>

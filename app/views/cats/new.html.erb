@@ -1,0 +1,18 @@
+<form action= "<%= cats_url %>" method="POST">
+
+  <label for = "name"> Name </label>
+  <input id = "name" type = "text" name = "cat[name]">
+
+  <label for = "birth_date"> Birth Date</label>
+  <input id = "birth_date" type = "text" name = "cat[birth_date]">
+
+  <label for = "color"> Color</label>
+  <input id = "color" type = "text" name = "cat[color]">
+
+
+
+  <input type="radio" name="cat[sex]" id="sex" value="m"/><label for = "sex"> M </label>
+  <input type="radio" name="cat[sex]" id="sex" value="f"/><label for = "sex"> F </label>
+<input type="submit" value="Add to My Collection of Cats!">
+
+</form>
